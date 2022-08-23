@@ -1027,11 +1027,13 @@ span {
             a {
                 color: $font-color;
             }
-        }&:hover {
+        }
+        &:hover {
             a {
                 color: $theme-main;
-                -webkit-transition: color 0.6s cubic-bezier(.17,.67,.83,.67);
-                transition: color 0.6s cubic-bezier(.17,.67,.83,.67);
+                -webkit-transition: color 0.6s
+                    cubic-bezier(0.17, 0.67, 0.83, 0.67);
+                transition: color 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
             }
         }
 
@@ -1054,10 +1056,13 @@ span {
             a:hover {
                 font-weight: 700;
                 color: $theme-main;
-                -webkit-transition: color 0.6s cubic-bezier(.17,.67,.83,.67);
-                transition: color 0.6s cubic-bezier(.17,.67,.83,.67);
-                -webkit-transition: font-weight 0.6s cubic-bezier(.17,.67,.83,.67);
-                transition: font-weight 0.6s cubic-bezier(.17,.67,.83,.67);
+                -webkit-transition: color 0.6s
+                    cubic-bezier(0.17, 0.67, 0.83, 0.67);
+                transition: color 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+                -webkit-transition: font-weight 0.6s
+                    cubic-bezier(0.17, 0.67, 0.83, 0.67);
+                transition: font-weight 0.6s
+                    cubic-bezier(0.17, 0.67, 0.83, 0.67);
             }
         }
 
@@ -1121,7 +1126,6 @@ span {
             line-height: 45px;
         }
 
-
         .newsletter-widget {
             position: relative;
             margin: 15px 0 20px 0;
@@ -1158,8 +1162,6 @@ span {
             }
         }
     }
-
-
 }
 
 /***************************************
@@ -1995,6 +1997,94 @@ span {
                     a {
                         img {
                             width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .single-sidebar-widget {
+            .post-widget {
+                .title {
+                    margin-bottom: 15px;
+                    position: relative;
+                    padding-bottom: 1.25rem;
+                    h4 {
+                        font-size: 17px;
+                        font-weight: 600;
+
+                        text-transform: uppercase;
+                        margin-top: 10px;
+                        &::before {
+                            content: "";
+                            left: 0;
+                            position: absolute;
+                            width: 100%;
+                            height: 0.0625rem;
+                            bottom: 0.34375rem;
+                            background-color: $baners-background;
+                        }
+                        &::after {
+                            content: "";
+                            left: 0;
+                            position: absolute;
+                            width: 2.5rem;
+                            height: 0.125rem;
+                            background-color: $theme-main;
+                            bottom: 0.3125rem;
+                        }
+                    }
+                }
+                ul {
+                    li {
+                        margin-top: 20px;
+                        .icon-box {
+                            width: 110px;
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                        .text-box {
+                            padding-left: 15px;
+                            h5 {
+                                font-weight: 500;
+                                a {
+                                    color: $font-color;
+                                }
+                            }
+                        }
+                    }
+                }
+                p {
+                    font-size: 14.5px;
+                    line-height: 25px;
+                    margin-bottom: 0;
+                }
+            }
+            .tags-widget {
+                ul {
+                    li {
+                        display: inline-block;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        a {
+                            padding: 6px 0;
+                            display: block;
+                            font-size: 12px;
+                            border: 1px solid $grey6;
+                            border-radius: 16px;
+                            padding-left: 25px;
+                            padding-right: 25px;
+                            text-transform: uppercase;
+                            color: $grey7;
+                            font-weight: 600;
+                            -webkit-transition: all 0.4s ease;
+                            transition: all 0.4s ease;
+                            &:hover {
+                                background: $theme-main;
+                                border-color: $theme-main;
+                                color: $white;
+                            }
                         }
                     }
                 }
@@ -3925,6 +4015,20 @@ span {
                         h4 {
                             font-weight: 500;
                         }
+                        li {
+                            list-style: square inside;
+                            a {
+                                color: $font-color;
+                                padding-left: 5px;
+                            }
+                            &:hover {
+                                a {
+                                    color: $theme-main;
+                                    transition: color 0.5s
+                                        cubic-bezier(0.075, 0.82, 0.165, 1);
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -3980,6 +4084,115 @@ span {
                     .img-box {
                         position: relative;
                         img {
+                            width: 100%;
+                            -webkit-transition: opacity 0.4s ease;
+                            transition: opacity 0.4s ease;
+                        }
+                        .overlay {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            .box {
+                                display: table;
+                                width: 100%;
+                                height: 100%;
+                                .content {
+                                    display: table-cell;
+                                    vertical-align: bottom;
+                                    overflow: hidden;
+                                    ul {
+                                        background: $theme-main;
+                                        margin: 0;
+                                        margin-left: -12px;
+                                        margin-right: -12px;
+                                        -webkit-transform: translate3d(
+                                            0,
+                                            35px,
+                                            0
+                                        );
+                                        transform: translate3d(0, 35px, 0);
+                                        -webkit-transition: -webkit-transform
+                                                0.4s ease,
+                                            visibility 0.4s ease,
+                                            opacity 0.4s ease;
+                                        transition: transform 0.4s ease,
+                                            visibility 0.4s ease,
+                                            opacity 0.4s ease;
+                                        visibility: hidden;
+                                        li {
+                                            padding: 0 12px;
+                                            i {
+                                                color: $font-color;
+                                                font-size: 16px;
+                                                line-height: 35px;
+                                                display: block;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .text-box {
+                        border: 1px solid $gray-lighter;
+                        text-align: center;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        -webkit-transition: 0.4s ease;
+                        transition: 0.4s ease;
+                    }
+                    &:hover {
+                        .img-box {
+                            img {
+                                opacity: 0.4;
+                            }
+                            .overlay {
+                                .box {
+                                    .content {
+                                        .social {
+                                            opacity: 1;
+                                            visibility: visible;
+                                            -webkit-transform: translate3d(
+                                                0,
+                                                0px,
+                                                0
+                                            );
+                                            transform: translate3d(0, 0px, 0);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .text-box {
+                            background: $grey4;
+                            h4 {
+                                color: $white;
+                            }
+                            p {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .our-team {
+        swiper .team-members {
+            .item {
+                padding-left: 15px;
+                padding-right: 15px;
+                padding: 0;
+                .single-team-member {
+                    transition: 0.3s;
+
+                    .img-box {
+                        position: relative;
+                        img {
+                            height: 367px;
                             width: 100%;
                             -webkit-transition: opacity 0.4s ease;
                             transition: opacity 0.4s ease;
@@ -4219,6 +4432,9 @@ span {
 *  Cart page styles
 ****************************************/
 .cart-wrapper {
+    mat-chip-list {
+        margin-bottom: 1rem;
+    }
     .mat-card {
         text-align: center;
         .cart-table.mat-table {
@@ -4653,7 +4869,7 @@ span {
                     font-size: 33px;
                     line-height: 74px;
                     margin-right: 7px;
-                    color: $theme-main
+                    color: $theme-main;
                 }
                 h4 {
                     display: inline-block;
