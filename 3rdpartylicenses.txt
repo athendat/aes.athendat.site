@@ -75,6 +75,15 @@ MIT
 @angular/router
 MIT
 
+@angular/service-worker
+MIT
+
+@ngrx/store
+MIT
+
+@ngrx/store-devtools
+MIT
+
 dom7
 MIT
 MIT License

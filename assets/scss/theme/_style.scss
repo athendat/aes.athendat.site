@@ -456,6 +456,7 @@ span {
                 text-decoration: none;
                 font-size: 13px;
                 transition: 0.4s;
+                cursor: pointer;
                 .mat-icon {
                     vertical-align: middle;
                     margin-right: 1px !important;
@@ -656,7 +657,7 @@ span {
                 padding: 10px 0;
                 .product {
                     margin-right: 7px;
-                    background: $baners-background;
+                    background: $banners-background;
                     border-radius: 3px;
                 }
                 .desc {
@@ -741,7 +742,7 @@ span {
                 0 1px 1px 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
             padding: 0;
             .product-img {
-                background: $baners-background;
+                background: $banners-background;
                 img {
                     max-width: 180px;
                     margin-bottom: 12px;
@@ -864,7 +865,7 @@ span {
 ****************************************/
 .banners-container {
     .baners {
-        background: $baners-background !important;
+        background: $banners-background !important;
         margin-right: 15px;
     }
     .bn-wrap {
@@ -1205,7 +1206,7 @@ span {
         .categories-wrap {
             border: 1px solid $grey8;
             .title {
-                background: $baners-background;
+                background: $banners-background;
                 border-bottom: 1px solid $grey-light;
                 color: $grey4;
                 padding: 15px 20px 15px 10px;
@@ -1504,7 +1505,7 @@ span {
             .carousel-banner {
                 width: 100%;
                 height: 223px;
-                background: $baners-background;
+                background: $banners-background;
                 .seccond {
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -1558,7 +1559,7 @@ span {
             border: 1px solid $grey-light;
             margin-bottom: 25px;
             .title {
-                background: $baners-background;
+                background: $banners-background;
                 border-bottom: 1px solid $grey-light;
                 color: $grey4;
                 padding: 15px 20px 15px 10px;
@@ -2021,7 +2022,7 @@ span {
                             width: 100%;
                             height: 0.0625rem;
                             bottom: 0.34375rem;
-                            background-color: $baners-background;
+                            background-color: $banners-background;
                         }
                         &::after {
                             content: "";
@@ -2256,7 +2257,7 @@ span {
 
 .home-header-three {
     background: $white;
-    border-top: 1px solid $baners-background;
+    border-top: 1px solid $banners-background;
     .logo {
         padding: 25px 0;
     }
@@ -2384,7 +2385,7 @@ span {
 }
 
 .topbar_four {
-    background: $baners-background;
+    background: $banners-background;
     max-height: 50px;
     min-height: 50px !important;
     .top-bar {
@@ -3225,7 +3226,7 @@ span {
                                     width: 100%;
                                     height: 0.0625rem;
                                     bottom: 0.34375rem;
-                                    background-color: $baners-background;
+                                    background-color: $banners-background;
                                 }
                                 &::after {
                                     content: "";
@@ -3529,7 +3530,7 @@ span {
                                     width: 100%;
                                     height: 0.0625rem;
                                     bottom: 0.34375rem;
-                                    background-color: $baners-background;
+                                    background-color: $banners-background;
                                 }
                                 &::after {
                                     content: "";
@@ -3698,7 +3699,7 @@ span {
                                     width: 100%;
                                     height: 0.0625rem;
                                     bottom: 0.34375rem;
-                                    background-color: $baners-background;
+                                    background-color: $banners-background;
                                 }
                                 &::after {
                                     content: "";
@@ -4035,7 +4036,7 @@ span {
         }
     }
     .our-values {
-        background: $baners-background;
+        background: $banners-background;
 
         .box-wraper {
             .box {
@@ -4942,12 +4943,70 @@ span {
     }
 }
 
-.active {
-    // color: $theme-main-dark;
-    border-radius: 0%;
-    background-color: $theme-main;
+.active-toolbar {
+    color: $theme-main !important;
+    // background-color: $theme-main;
 }
 
-.active:hover {
-    background-color: $background;
+.active {
+    border-radius: 0% !important;
+    background-color: $theme-main;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        color: $theme-main !important;
+        background-color: $background;
+    }
+}
+
+/***************************************
+*  Breadcrumb styles
+****************************************/
+.breadcrumb-wrapper {
+    width: 100%;
+    height: 80px;
+    padding: 0;
+    max-width: 1300px;
+    margin: 0 auto;
+
+    .row {
+        height: 100%;
+
+        .breadcrumb-label {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8125rem;
+            color: $font-color;
+            padding: 0 2rem;
+        }
+
+        .breadcrumb-sections {
+            padding: 0 2rem;
+            display: inline-flex;
+            gap: 0.75rem;
+
+            .breadcrumb-slash {
+                font-weight: 600;
+                margin: 0 0.75rem;
+            }
+
+            .breadcrumb-child {
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 0.8125rem;
+                color: $font-color;
+                &:hover {
+                    color: $theme-main;
+                    transition: color 0.35s ease-in-out;
+                }
+            }
+
+            .breadcrumb-last-child {
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 0.8125rem;
+                color: $theme-main-dark;
+                cursor: default;
+            }
+        }
+    }
 }
