@@ -722,7 +722,7 @@ span {
     .swiper-button-prev.swiper-button-disabled[_ngcontent-c25] {
         pointer-events: auto;
     }
-    .product-wraper {
+    .product-wrapper {
         padding: 20px 0px 20px 20px;
         .product-box {
             width: 100%;
@@ -1422,7 +1422,7 @@ span {
         .products {
             padding: 0 !important;
 
-            .product-wraper {
+            .product-wrapper {
                 .product-box {
                     .product-item {
                         width: 240px;
@@ -1778,7 +1778,7 @@ span {
             background: $white;
             position: relative;
 
-            .product-wraper {
+            .product-wrapper {
                 .product-box {
                     .product-item {
                         width: 227px;
@@ -5007,6 +5007,240 @@ span {
                 color: $theme-main-dark;
                 cursor: default;
             }
+        }
+    }
+}
+
+/***************************************
+*  Profile styles
+****************************************/
+.profile-wrapper {
+    max-width: 1300px !important;
+    margin: 0 auto;
+
+    .profile-left-panel {
+        // border: #222 solid 2px;
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1),
+            0 1px 1px 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
+
+        h4 {
+            padding: 1rem 2rem;
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+
+        .panels-list {
+            a {
+                padding: 1rem 2rem;
+                color: $grey7;
+                font-weight: 500;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $background;
+                }
+                &.selected {
+                    color: $font-color;
+                    border-left: $theme-main solid 5px;
+                }
+                &.sign-out {
+                    color: $font-color;
+                    border-top: gainsboro solid 1px;
+                }
+            }
+        }
+    }
+
+    .profile-panels {
+        .profile-user-info {
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1),
+                0 1px 1px 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
+            padding: 2rem;
+
+            img {
+                border-radius: 100%;
+                width: 90px;
+                height: 90px;
+            }
+
+            span {
+                font-weight: 500;
+                font-size: 1rem;
+
+                &.email {
+                    color: dodgerblue;
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            button {
+                background-color: $grey2;
+            }
+        }
+
+        .profile-default-address {
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1),
+                0 1px 1px 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
+            padding: 2rem;
+            font-weight: 500;
+            font-size: 1rem;
+            position: relative;
+
+            .profile-badge {
+                background-color: $theme-main;
+                padding: 5px;
+                font-size: 0.75rem;
+                position: absolute;
+                right: 1rem;
+                top: 1rem;
+                border-radius: 2px;
+                color: $font-color;
+            }
+
+            .profile-user-name {
+                span {
+                    font-size: 1.25rem;
+                }
+            }
+
+            .profile-user-contact {
+                .title {
+                    font-size: 1.05rem;
+                    color: $grey7;
+                }
+            }
+        }
+
+        .profile-last-orders {
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1),
+                0 1px 1px 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
+            padding: 2rem;
+
+            .profile-section-title {
+                font-size: 1.25rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+
+            .orders-grid-title {
+                display: grid;
+                border-bottom: gainsboro solid 1px;
+                font-weight: 600;
+                font-size: 1.05rem;
+                padding: 3px;
+                grid-template-columns: 20% 20% 20% 40%;
+            }
+
+            .orders-grid {
+                display: grid;
+                border-bottom: gainsboro solid 1px;
+                padding: 15px 0 15px 0;
+                grid-template-columns: 20% 20% 20% 40%;
+                .tracking {
+                    color: dodgerblue;
+                }
+            }
+        }
+    }
+
+    .profile-section {
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1),
+            0 1px 1px 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
+        padding: 2rem;
+
+        .section-title {
+            border-bottom: gainsboro solid 1px;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .profile-account-data-form,
+        .profile-pwd-form {
+            form {
+                width: 100%;
+
+                label {
+                    margin: 1rem 0 0.25rem 0;
+                    color: $grey7;
+                }
+
+                input,
+                select,
+                textarea {
+                    background-color: $banners-background;
+                    border-radius: 2.5px;
+                    border: none;
+                    color: $font-color;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    padding: 0.5rem;
+                    transition: all 0.3s ease-in-out;
+                    width: 400px !important;
+                    max-width: 400px !important;
+
+                    &:hover {
+                        border: gainsboro solid 0.5px;
+                    }
+                    &:focus {
+                        outline: gainsboro solid 0.5px;
+                        background-color: white;
+                    }
+                }
+            }
+        }
+
+        .profile-orders {
+            .orders-grid-title {
+                display: grid;
+                border-bottom: gainsboro solid 1px;
+                font-weight: 600;
+                font-size: 1.05rem;
+                padding: 0 0 1rem 0;
+                grid-template-columns: 20% 20% 20% 40%;
+            }
+
+            .orders-grid {
+                display: grid;
+                padding: 1rem 0 1rem 0;
+                border-bottom: gainsboro solid 1px;
+                grid-template-columns: 20% 20% 20% 40%;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: $banners-background;
+                }
+
+                .tracking {
+                    color: dodgerblue;
+                }
+            }
+        }
+    }
+
+    .profile-button {
+        background-color: $theme-main;
+        border-radius: 2px;
+        color: $font-color;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 1rem 0.5rem;
+        text-align: center;
+        border: none;
+        outline: none;
+        margin-top: 1.5rem;
+        max-width: 150px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: $banners-background;
+            outline: gainsboro solid 0.5px;
         }
     }
 }
