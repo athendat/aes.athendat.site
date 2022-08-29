@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1661724473231,
+  "timestamp": 1661732424446,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -34,6 +34,7 @@
         "/assets/app.scss",
         "/assets/data/banners.json",
         "/assets/data/products2.json",
+        "/assets/icons/apple_tocuh_icon.png",
         "/assets/icons/icon-128x128.png",
         "/assets/icons/icon-144x144.png",
         "/assets/icons/icon-152x152.png",
@@ -162,6 +163,7 @@
     "/assets/app.scss": "c59134e29e3b5ec1bdce209277d714a65d671861",
     "/assets/data/banners.json": "cdefbcdb6b4d75220c83b4bf0e1d5cac4edc3f43",
     "/assets/data/products2.json": "92428dc434e766d92ef9ecbfa7c53231504a73ea",
+    "/assets/icons/apple_tocuh_icon.png": "296b0c03d8a33faa39de7f2aa957f5ac395b9d38",
     "/assets/icons/icon-128x128.png": "1ecb66bf4de0ce50f436d265d6e50b1a0dfc98aa",
     "/assets/icons/icon-144x144.png": "99455693a305e671fd0f0b533b0a48792f5691fe",
     "/assets/icons/icon-152x152.png": "aaf89f439ac21343822be1de2081d8804143de32",
@@ -280,9 +282,9 @@
     "/fontawesome-webfont.cf011583fb81df9f.woff": "28b782240b3e76db824e12c02754a9731a167527",
     "/fontawesome-webfont.da909aa098b0ee2d.svg": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed",
     "/fontawesome-webfont.e9955780856cf8aa.woff2": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c",
-    "/index.html": "2b45fc72e6a8934bad27cbe532645547acb7e1a5",
+    "/index.html": "dfa324cb57f039c0f5012f366dc585dbf4fc5474",
     "/main.28ba15482003fe2e.js": "f22e164ce0eea14c8dfe8ae41ad584ac847724b4",
-    "/manifest.webmanifest": "69cc9d6c1699990b3541e66c2009a6f4e65f2607",
+    "/manifest.webmanifest": "cc6685643fccc8b9495737b2723968d78bcfe775",
     "/polyfills.1020a6840153a8af.js": "901844e0d46b5b85d0ae3309a2274fed55260be2",
     "/runtime.666f6736daa98b40.js": "e0960d737def990d18da70aa768a7f946d16ad83",
     "/styles.71d5b563a26ab348.css": "8e879400ae1aeeb26c45546e7e4d8c9dc2ebbd3f"
