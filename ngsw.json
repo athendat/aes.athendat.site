@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1661732424446,
+  "timestamp": 1662995389135,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,15 +11,15 @@
         "ignoreVary": true
       },
       "urls": [
-        "/856.936dbe82e6cf476d.js",
-        "/982.30a4cdf4b5edf0e4.js",
+        "/122.5a495e933138ef65.js",
+        "/605.7b232cc4887b4dc5.js",
         "/favicon.ico",
         "/index.html",
-        "/main.28ba15482003fe2e.js",
+        "/main.08e2772157aac35e.js",
         "/manifest.webmanifest",
-        "/polyfills.1020a6840153a8af.js",
-        "/runtime.666f6736daa98b40.js",
-        "/styles.71d5b563a26ab348.css"
+        "/polyfills.d086b92288dd842f.js",
+        "/runtime.cc2972dbca6ff521.js",
+        "/styles.e922d3812971ff29.css"
       ],
       "patterns": []
     },
@@ -31,7 +31,6 @@
         "ignoreVary": true
       },
       "urls": [
-        "/assets/app.scss",
         "/assets/data/banners.json",
         "/assets/data/products2.json",
         "/assets/icons/apple_tocuh_icon.png",
@@ -141,13 +140,10 @@
         "/assets/images/product/tv2.png",
         "/assets/images/product/tv3.png",
         "/assets/images/product/tv4.png",
-        "/assets/scss/_color1.scss",
-        "/assets/scss/_color2.scss",
-        "/assets/scss/_color3.scss",
-        "/assets/scss/_color4.scss",
-        "/assets/scss/theme/_responsive.scss",
-        "/assets/scss/theme/_style.scss",
-        "/assets/scss/theme/_variables.scss",
+        "/assets/scss/_responsive.scss",
+        "/assets/scss/_spinner.scss",
+        "/assets/scss/_style.scss",
+        "/assets/scss/_variables.scss",
         "/fontawesome-webfont.8a7cb27d142e3e19.ttf",
         "/fontawesome-webfont.cf011583fb81df9f.woff",
         "/fontawesome-webfont.da909aa098b0ee2d.svg",
@@ -158,9 +154,8 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/856.936dbe82e6cf476d.js": "a86e6a38aef987c2fcce699a9d2be011de1bac3c",
-    "/982.30a4cdf4b5edf0e4.js": "78de367a09924fdad82b17b08c610ad4b786d6b5",
-    "/assets/app.scss": "c59134e29e3b5ec1bdce209277d714a65d671861",
+    "/122.5a495e933138ef65.js": "e21fe172055a8713e212a1f654f9d0639de33914",
+    "/605.7b232cc4887b4dc5.js": "d3ef4eb308e0c27f45c5b523f02853404aa42865",
     "/assets/data/banners.json": "cdefbcdb6b4d75220c83b4bf0e1d5cac4edc3f43",
     "/assets/data/products2.json": "92428dc434e766d92ef9ecbfa7c53231504a73ea",
     "/assets/icons/apple_tocuh_icon.png": "296b0c03d8a33faa39de7f2aa957f5ac395b9d38",
@@ -270,24 +265,21 @@
     "/assets/images/product/tv2.png": "e7fdae4a55bd690a7c9fe1cff3f039a6a6588fb6",
     "/assets/images/product/tv3.png": "fc34b29b93e87d7ed9749ee42cd4fee02866a2e3",
     "/assets/images/product/tv4.png": "812b95c0016b57570130846c05cd806d15ce2936",
-    "/assets/scss/_color1.scss": "362fe10d616556c32e5400a47912886cfba085b1",
-    "/assets/scss/_color2.scss": "2ff45e9ccc0c16616007ef568c224295b10c7ad2",
-    "/assets/scss/_color3.scss": "992cdcf10fd65a003ca885a90404e89ee40bb876",
-    "/assets/scss/_color4.scss": "635294d5269f1feaa9754fd2f4d25b2f7a89ff1d",
-    "/assets/scss/theme/_responsive.scss": "c557f805259891371cf6673a95fea5371ade0d79",
-    "/assets/scss/theme/_style.scss": "a6019aacd5cf1ae3bca068b888eb1f70033fbc1a",
-    "/assets/scss/theme/_variables.scss": "fccbbe08584a9253ad958019cba1211a08f4bb56",
+    "/assets/scss/_responsive.scss": "c557f805259891371cf6673a95fea5371ade0d79",
+    "/assets/scss/_spinner.scss": "5bab74d928b62d6195da3cc128257bb9b0cbc3ad",
+    "/assets/scss/_style.scss": "f0112040d57b539aa4ca95663312f667aca02300",
+    "/assets/scss/_variables.scss": "fccbbe08584a9253ad958019cba1211a08f4bb56",
     "/favicon.ico": "7aaa55fea71d7d4940285ca37d8418c5b9ff1918",
     "/fontawesome-webfont.8a7cb27d142e3e19.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
     "/fontawesome-webfont.cf011583fb81df9f.woff": "28b782240b3e76db824e12c02754a9731a167527",
     "/fontawesome-webfont.da909aa098b0ee2d.svg": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed",
     "/fontawesome-webfont.e9955780856cf8aa.woff2": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c",
-    "/index.html": "dfa324cb57f039c0f5012f366dc585dbf4fc5474",
-    "/main.28ba15482003fe2e.js": "f22e164ce0eea14c8dfe8ae41ad584ac847724b4",
+    "/index.html": "01bd999bb051fa8894ab4e5baddf600ed9e4ca68",
+    "/main.08e2772157aac35e.js": "0dc92c8e01f7d718d3b3542440dda003d5ccc00f",
     "/manifest.webmanifest": "cc6685643fccc8b9495737b2723968d78bcfe775",
-    "/polyfills.1020a6840153a8af.js": "901844e0d46b5b85d0ae3309a2274fed55260be2",
-    "/runtime.666f6736daa98b40.js": "e0960d737def990d18da70aa768a7f946d16ad83",
-    "/styles.71d5b563a26ab348.css": "8e879400ae1aeeb26c45546e7e4d8c9dc2ebbd3f"
+    "/polyfills.d086b92288dd842f.js": "178efd4081380bb197e57b4b84f564071426f377",
+    "/runtime.cc2972dbca6ff521.js": "319f4b421e3ed484757d8d3411a7314108d8ddaf",
+    "/styles.e922d3812971ff29.css": "a18770eeaf95bca1eb78f89345565253e22550e4"
   },
   "navigationUrls": [
     {
