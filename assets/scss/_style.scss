@@ -48,9 +48,9 @@
 /***************************************
 * 1. Imports
 ****************************************/
-@import './variables';
-@import './responsive';
-@import './spinner';
+@import "./variables";
+@import "./responsive";
+@import "./spinner";
 
 /***************************************
 * 1. General styles
@@ -141,8 +141,9 @@ h6 {
 //   background-color: rgba(255, 193, 17, 0.8) !important;
 //   position: fixed;
 // }
-.mat-checkbox-checked.mat-accent .mat-checkbox-background,.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
-    background-color: $theme-main
+.mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: $theme-main;
 }
 .mat-form-field.mat-focused .mat-form-field-label {
     color: $theme-main;
@@ -160,13 +161,13 @@ h6 {
 }
 
 .snack-alert-warning {
-    background-color: #F59E0B !important;
-    color: #FFF;
+    background-color: #f59e0b !important;
+    color: #fff;
 }
 
 .snack-alert-error {
     background-color: $theme-main-red !important;
-    color: #FFF;
+    color: #fff;
 }
 .aes-app .mat-drawer-container {
     background: #fff;
@@ -341,7 +342,7 @@ li {
     min-height: 46px !important;
     min-width: 150px !important;
     &:disabled {
-        cursor: not-allowed !important;;
+        cursor: not-allowed !important;
     }
 }
 
@@ -763,6 +764,7 @@ span {
 
 .products {
     position: relative;
+
     .swiper-button-prev.swiper-button-disabled[_ngcontent-c25] {
         pointer-events: auto;
     }
@@ -1257,7 +1259,7 @@ span {
                 font-weight: 500;
                 font-size: 14.5px;
             }
-            .category-contant {
+            .category-content {
                 ul {
                     li {
                         display: block;
@@ -1610,7 +1612,7 @@ span {
                 font-weight: 500;
                 font-size: 14.5px;
             }
-            .category-contant {
+            .category-content {
                 ul {
                     li {
                         display: block;
@@ -2819,6 +2821,12 @@ span {
                                 }
                             }
                         }
+
+                        @media (max-width: 412px) {
+                            .mat-button-wrapper {
+                                padding-top: 2rem;
+                            }
+                        }
                     }
                 }
             }
@@ -2892,9 +2900,11 @@ span {
 *  Categories menu styles
 ****************************************/
 .categories-menu-wrap {
-    .category-contant {
+    .category-content {
         ul {
-            background-color: #403f3f;
+            background-color: $font-color;
+            overflow-x: auto;
+            // white-space: nowrap;
             li {
                 width: 14.285%;
                 transition: 0.3s;
@@ -4896,10 +4906,10 @@ span {
 }
 
 /***************************************
-*  Categorie page styles
+*  Categories page styles
 ****************************************/
 
-.category-contant {
+.category-content {
     ul {
         li {
             a {
@@ -4907,6 +4917,16 @@ span {
                 padding-bottom: 10px;
                 display: block;
                 font-size: 15px;
+                transition: all 0.3s ease-in-out;
+
+                &:hover .active {
+                    font-weight: 600;
+                    color: $font-color;
+                }
+            }
+            &.active {
+                font-weight: 600;
+                color: $font-color;
             }
         }
     }
@@ -5313,6 +5333,102 @@ span {
 
         &:disabled {
             cursor: not-allowed;
+        }
+    }
+}
+
+/***************************************
+*  Header Mobile
+****************************************/
+.header-mobile {
+    overflow-x: hidden;
+
+    .header-mobile-top {
+        padding: 0.5rem 1rem;
+        width: 100%;
+        background-color: $theme-main;
+    }
+
+    .header-mobile-middle {
+        background-color: $grey2;
+        padding: 0.5rem 1rem;
+        width: 100%;
+        .search-form {
+            width: 75%;
+            margin: 0 auto;
+            /* margin-top: 6px; */
+            padding: 5px 0;
+            .form-wrap {
+                background-color: transparent;
+                white-space: nowrap;
+                zoom: 1;
+                width: 95%;
+                margin: 0;
+                position: relative;
+                background: $grey4;
+                background: rgba(0, 0, 0, 0.2);
+                input {
+                    border-color: $white;
+                    border-radius: 3px;
+                    border-style: none;
+                    border-width: 1px;
+                    box-shadow: none;
+                    float: left;
+                    height: 40px;
+                    max-width: 80%;
+                    outline: none;
+                    padding: 0 0 0 12px;
+                    transition: box-shadow 0.3s ease-out;
+                    width: 80%;
+                    -webkit-transition: box-shadow 0.3s ease-out;
+                }
+            }
+            .btn-search {
+                background-color: $font-color;
+                border-radius: 0 3px 3px 0;
+                border: 0;
+                box-shadow: none;
+                color: $white;
+                cursor: pointer;
+                height: 100%;
+                margin: 0;
+                min-width: 50px;
+                overflow: visible;
+                padding: 0 35px;
+                position: absolute;
+                right: -15px;
+                text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+                text-transform: uppercase;
+                top: 0;
+                transition: all 250ms ease-in-out;
+                -moz-transition: all 250ms ease-in-out;
+                -ms-transition: all 250ms ease-in-out;
+                -o-transition: all 250ms ease-in-out;
+                -webkit-appearance: none;
+                -webkit-border-radius: 0 3px 3px 0;
+                -webkit-box-shadow: none;
+                -webkit-transition: all 250ms ease-in-out;
+            }
+        }
+    }
+}
+
+.header-mobile-categories {
+    background-color: $font-color;
+    padding: 0.5rem 1rem;
+    height: 56px;
+    width: 100%;
+    max-width: 100%;
+    overflow: scroll;
+    white-space: nowrap;
+
+    a {
+        color: $white;
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 5px;
+        &:hover {
+            background-color: $grey;
         }
     }
 }
