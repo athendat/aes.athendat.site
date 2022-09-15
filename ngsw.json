@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1663130513086,
+  "timestamp": 1663214734927,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -12,14 +12,14 @@
       },
       "urls": [
         "/122.5a495e933138ef65.js",
-        "/605.7eb06b50b230ff75.js",
+        "/605.556644e60cef956b.js",
         "/favicon.ico",
         "/index.html",
-        "/main.f8fd8395ccda24e2.js",
+        "/main.d977ab92762d1a41.js",
         "/manifest.webmanifest",
         "/polyfills.d086b92288dd842f.js",
-        "/runtime.ae3325576723672c.js",
-        "/styles.69e53ca1aa5f9866.css"
+        "/runtime.6b9aef9886e3b7b8.js",
+        "/styles.45a9eacc2c81b084.css"
       ],
       "patterns": []
     },
@@ -155,7 +155,7 @@
   "dataGroups": [],
   "hashTable": {
     "/122.5a495e933138ef65.js": "e21fe172055a8713e212a1f654f9d0639de33914",
-    "/605.7eb06b50b230ff75.js": "56568399ac0c4638ab26f9d2b17c76c4a890fe28",
+    "/605.556644e60cef956b.js": "1b003bd9a9293fdeee0f779f1ca450aadca571b1",
     "/assets/data/banners.json": "cdefbcdb6b4d75220c83b4bf0e1d5cac4edc3f43",
     "/assets/data/products2.json": "92428dc434e766d92ef9ecbfa7c53231504a73ea",
     "/assets/icons/apple_tocuh_icon.png": "296b0c03d8a33faa39de7f2aa957f5ac395b9d38",
@@ -267,19 +267,19 @@
     "/assets/images/product/tv4.png": "812b95c0016b57570130846c05cd806d15ce2936",
     "/assets/scss/_responsive.scss": "c557f805259891371cf6673a95fea5371ade0d79",
     "/assets/scss/_spinner.scss": "5bab74d928b62d6195da3cc128257bb9b0cbc3ad",
-    "/assets/scss/_style.scss": "5142d69dad2ad4c433b3cf2a0825a717f8e20abe",
+    "/assets/scss/_style.scss": "7101984efb5dc7ead3a873d706431a1d4234d394",
     "/assets/scss/_variables.scss": "fccbbe08584a9253ad958019cba1211a08f4bb56",
     "/favicon.ico": "7aaa55fea71d7d4940285ca37d8418c5b9ff1918",
     "/fontawesome-webfont.8a7cb27d142e3e19.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
     "/fontawesome-webfont.cf011583fb81df9f.woff": "28b782240b3e76db824e12c02754a9731a167527",
     "/fontawesome-webfont.da909aa098b0ee2d.svg": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed",
     "/fontawesome-webfont.e9955780856cf8aa.woff2": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c",
-    "/index.html": "00dcc8cf1d5336903bbdab10ae77480d2627e43c",
-    "/main.f8fd8395ccda24e2.js": "9c0eb79f7efbffd372fc9c4d741ddccb7d2f7a40",
+    "/index.html": "f0995ec24a650cd18c7a8d9bbd56fe437b296902",
+    "/main.d977ab92762d1a41.js": "f4b1df95846e63dca47d657219f5ad56c6e65273",
     "/manifest.webmanifest": "cc6685643fccc8b9495737b2723968d78bcfe775",
     "/polyfills.d086b92288dd842f.js": "178efd4081380bb197e57b4b84f564071426f377",
-    "/runtime.ae3325576723672c.js": "d4fad836cc2f2d31962790f29b2d3b3b564074c5",
-    "/styles.69e53ca1aa5f9866.css": "d6c60a202a853fb9741659674a0e0890802ad1e1"
+    "/runtime.6b9aef9886e3b7b8.js": "e72c4f3ff14df5f6e5aa5eac5d63673200994674",
+    "/styles.45a9eacc2c81b084.css": "78f9529ad6ea3c514b777a24a0d129171084b433"
   },
   "navigationUrls": [
     {
