@@ -220,10 +220,10 @@ li {
     text-align: center;
 }
 .mat-radio-button.mat-accent .mat-radio-inner-circle {
-    background: $theme-main-red !important;
+    background: $theme-main !important;
 }
 .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
-    border-color: $theme-main-red !important;
+    border-color: $theme-main !important;
 }
 .mat-raised-button.mat-primary {
     background-color: $theme-main;
@@ -2153,33 +2153,33 @@ span {
                             }
                         }
 
-                        // .stars {
-                        //     color: $theme-main;
-                        //     margin: 2px 0 10px 0;
-                        //     span {
-                        //         font-size: 1.5rem;
-                        //         margin-left: 10px 3px;
+                        .stars {
+                            color: $theme-main;
+                            margin: 2px 0 10px 0;
+                            span {
+                                font-size: 1.5rem;
+                                margin-left: 10px 3px;
 
-                        //         &.star-border {
-                        //             color: #d2d2d2;
-                        //         }
+                                &.star-border {
+                                    color: #d2d2d2;
+                                }
 
-                        //         &.star-solid {
-                        //             color: #ffc111;
-                        //         }
+                                &.star-solid {
+                                    color: #ffc111;
+                                }
 
-                        //         &.star-half {
-                        //             color: #ffc111;
-                        //         }
-                        //     }
-                        //     mat-icon {
-                        //         font-size: 17px;
-                        //         line-height: 17px;
-                        //         height: 17px;
-                        //         width: 17px;
-                        //         vertical-align: middle;
-                        //     }
-                        // }
+                                &.star-half {
+                                    color: #ffc111;
+                                }
+                            }
+                            mat-icon {
+                                font-size: 17px;
+                                line-height: 17px;
+                                height: 17px;
+                                width: 17px;
+                                vertical-align: middle;
+                            }
+                        }
                         .category {
                             margin-bottom: 4px;
                             display: block;
@@ -3913,33 +3913,33 @@ span {
 ****************************************/
 .popular-products {
     .reviews {
-        // .stars {
-        //     color: $theme-main;
-        //     margin: 0px 0 5px 0;
-        //     span {
-        //         font-size: 1rem;
-        //         margin-left: 10px 3px;
+        .stars {
+            color: $theme-main;
+            margin: 0px 0 5px 0;
+            span {
+                font-size: 1rem;
+                margin-left: 10px 3px;
 
-        //         &.star-border {
-        //             color: #d2d2d2;
-        //         }
+                &.star-border {
+                    color: #d2d2d2;
+                }
 
-        //         &.star-solid {
-        //             color: #ffc111;
-        //         }
+                &.star-solid {
+                    color: #ffc111;
+                }
 
-        //         &.star-half {
-        //             color: #ffc111;
-        //         }
-        //     }
-        //     mat-icon {
-        //         font-size: 17px;
-        //         line-height: 17px;
-        //         height: 17px;
-        //         width: 17px;
-        //         vertical-align: middle;
-        //     }
-        // }
+                &.star-half {
+                    color: #ffc111;
+                }
+            }
+            mat-icon {
+                font-size: 17px;
+                line-height: 17px;
+                height: 17px;
+                width: 17px;
+                vertical-align: middle;
+            }
+        }
     }
 }
 .mega-menu-pane {
@@ -4639,26 +4639,26 @@ span {
                     font-size: 24px;
                 }
             }
-            // .stars {
-            //     color: $theme-main;
-            //     margin: 2px 0 10px 0;
-            //     span {
-            //         font-size: 1.5rem;
-            //         margin-left: 10px 3px;
+            .stars {
+                color: $theme-main;
+                margin: 2px 0 10px 0;
+                span {
+                    font-size: 1.5rem;
+                    margin-left: 10px 3px;
 
-            //         &.star-border {
-            //             color: #d2d2d2;
-            //         }
+                    &.star-border {
+                        color: #d2d2d2;
+                    }
 
-            //         &.star-solid {
-            //             color: #ffc111;
-            //         }
+                    &.star-solid {
+                        color: #ffc111;
+                    }
 
-            //         &.star-half {
-            //             color: #ffc111;
-            //         }
-            //     }
-            // }
+                    &.star-half {
+                        color: #ffc111;
+                    }
+                }
+            }
             .avalibility {
                 span {
                     color: $theme-main-red;
@@ -4894,7 +4894,7 @@ span {
         margin-bottom: 15px;
     }
     .mat-radio-button.mat-accent .mat-radio-inner-circle {
-        background: $theme-main-red !important;
+        background: $theme-main !important;
     }
 }
 
