@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1663471115881,
+  "timestamp": 1663627874864,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,15 +11,15 @@
         "ignoreVary": true
       },
       "urls": [
-        "/122.5a495e933138ef65.js",
-        "/605.556644e60cef956b.js",
+        "/122.6377c643813f63bd.js",
+        "/605.94491806540a75b1.js",
         "/favicon.ico",
         "/index.html",
-        "/main.a7dd754c36fd64d9.js",
+        "/main.4b6edacba63bd88e.js",
         "/manifest.webmanifest",
         "/polyfills.d086b92288dd842f.js",
-        "/runtime.6b9aef9886e3b7b8.js",
-        "/styles.377cc5492233375a.css"
+        "/runtime.d1fad3a462c70ada.js",
+        "/styles.5a53453a8ae6fb60.css"
       ],
       "patterns": []
     },
@@ -117,8 +117,8 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/122.5a495e933138ef65.js": "e21fe172055a8713e212a1f654f9d0639de33914",
-    "/605.556644e60cef956b.js": "1b003bd9a9293fdeee0f779f1ca450aadca571b1",
+    "/122.6377c643813f63bd.js": "479d3e7c35249f90fe4cfe8cf8c8611f5a9e88ee",
+    "/605.94491806540a75b1.js": "8afff3d50cb13201f1251ae36c3f32e9b3887de9",
     "/assets/data/banners.json": "cdefbcdb6b4d75220c83b4bf0e1d5cac4edc3f43",
     "/assets/data/products2.json": "92428dc434e766d92ef9ecbfa7c53231504a73ea",
     "/assets/icons/apple_tocuh_icon.png": "296b0c03d8a33faa39de7f2aa957f5ac395b9d38",
@@ -193,19 +193,19 @@
     "/assets/images/search-not-found.svg": "9de93cc46ecf5f1047efac489dc8c3895dd2e7ea",
     "/assets/scss/_responsive.scss": "c557f805259891371cf6673a95fea5371ade0d79",
     "/assets/scss/_spinner.scss": "5e3416be830ba08955a859019ae906d8bdadc089",
-    "/assets/scss/_style.scss": "e5da3df1abc8016f7ee61b5752bfcb9eb29c8448",
-    "/assets/scss/_variables.scss": "958e0a4f51ea24ca42075f9c4a8bd43cf4051578",
+    "/assets/scss/_style.scss": "1c86690766f29c5e5d4c7c1a6b4805d141704218",
+    "/assets/scss/_variables.scss": "27bb8fd078fcf7878d7e87ff5279f0e82a16f7c4",
     "/favicon.ico": "7aaa55fea71d7d4940285ca37d8418c5b9ff1918",
     "/fontawesome-webfont.8a7cb27d142e3e19.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
     "/fontawesome-webfont.cf011583fb81df9f.woff": "28b782240b3e76db824e12c02754a9731a167527",
     "/fontawesome-webfont.da909aa098b0ee2d.svg": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed",
     "/fontawesome-webfont.e9955780856cf8aa.woff2": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c",
-    "/index.html": "cfcf0f82020d3048b5a38e5a44d55f84d6c8d0ad",
-    "/main.a7dd754c36fd64d9.js": "9f686c0daa0912c4529a086bd081ff9149e4d1a7",
+    "/index.html": "0f1bcf2e354e377d13a790578cd2dd941aa03c43",
+    "/main.4b6edacba63bd88e.js": "821236c802e1d6f6a0312523724e360ca833325a",
     "/manifest.webmanifest": "cc6685643fccc8b9495737b2723968d78bcfe775",
     "/polyfills.d086b92288dd842f.js": "178efd4081380bb197e57b4b84f564071426f377",
-    "/runtime.6b9aef9886e3b7b8.js": "e72c4f3ff14df5f6e5aa5eac5d63673200994674",
-    "/styles.377cc5492233375a.css": "135bca201b4d2f5482821ebfdf422bc73a88bebe"
+    "/runtime.d1fad3a462c70ada.js": "f0e4f636e5ad61bf18333d95be78a12885503985",
+    "/styles.5a53453a8ae6fb60.css": "1649aa1411f649aa9a10b60472bcd8b623bd5e13"
   },
   "navigationUrls": [
     {
