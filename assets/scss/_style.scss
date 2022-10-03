@@ -1,5 +1,5 @@
 /**************************************************************************
-***************** Master Stylesheet for Sophia ecommerce************************
+***************** Master Style sheet for Sophia e-commerce************************
 ***************************************************************************
 =========================== Content Index =================================
 * 1. General styles
@@ -8,7 +8,7 @@
      - Header-1 styles
      - Shopping widget styles
      - Home product section styles
-     - Home baners section styles
+     - Home banners section styles
      - Home vertical-product section styles
      - Home footer section styles
 * 3. HOME-2 STYLES
@@ -217,14 +217,15 @@ li {
     width: auto;
     text-align: center;
 }
+
 .mat-radio-button.mat-accent .mat-radio-inner-circle {
-    background: $secondary40 !important;
+    background: $secondary10 !important;
 }
 .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
-    border-color: $secondary40 !important;
+    border-color: $secondary10 !important;
 }
 .mat-radio-label-content {
-    color: $secondary80;
+    color: $secondary10;
     font-weight: 400;
     font-size: 1rem;
     white-space: nowrap;
@@ -233,16 +234,27 @@ li {
 }
 .mat-radio-checked {
     .mat-radio-label-content {
-        color: $secondary40;
-        font-weight: 400;
+        color: $secondary10;
+        font-weight: 600;
     }
 }
+
+.filter-items {
+    .mat-radio-button {
+        margin-bottom: 15px;
+    }
+}
+
 .mat-raised-button.mat-primary {
     background-color: $theme-main;
     color: $font-color;
 }
 .mat-input-element {
     caret-color: $theme-main !important;
+}
+.mat-progress-spinner circle,
+.mat-spinner circle {
+    stroke: $theme-main;
 }
 .container {
     max-width: 1300px;
@@ -341,7 +353,7 @@ li {
 .pt-60 {
     padding-top: 60px !important;
 }
-.devider {
+.divider {
     padding-top: 15px;
     padding-bottom: 20px;
     border-top: 1px dashed $grey;
@@ -363,6 +375,8 @@ li {
     margin-top: 20px;
     min-height: 46px !important;
     min-width: 150px !important;
+    outline: none;
+    border: none;
     &:disabled {
         cursor: not-allowed !important;
     }
@@ -381,6 +395,12 @@ li {
 
 .flex-auto {
     flex: 1 1 auto;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
 }
 /***************************************
     ***************************************
@@ -493,14 +513,9 @@ span {
 }
 
 .sidenav {
-    width: 250px;
-    padding: 8px 16px;
+    width: 85% !important;
     position: fixed !important;
     z-index: 999999999999999999 !important;
-}
-
-.side-filters {
-    width: 85% !important;
 
     mat-toolbar {
         background-color: $secondary90;
@@ -511,179 +526,84 @@ span {
         }
     }
 
-    .toggles-wrapper {
-        padding: 8px 14px;
+    .sidebar-items {
+        padding: 8px 16px;
+    }
 
-        .mat-expansion-panel {
-            border-top-right-radius: 4px;
-            border-top-left-radius: 4px;
-            border: 1px solid $grey-light;
-            box-shadow: none;
-            margin-bottom: 20px;
-            .mat-expansion-panel-header-title span {
-                font-size: 17px;
-                text-transform: capitalize;
-                font-weight: 500;
+    .sidenav-filters {
+        padding: 8px 16px;
 
-                line-height: 1;
-            }
-        }
+        .toggles-wrapper {
+            .mat-expansion-panel {
+                border-top-right-radius: 4px;
+                border-top-left-radius: 4px;
+                border: 1px solid $grey-light;
+                box-shadow: none;
+                margin-bottom: 20px;
 
-        .filter-sidenav {
-            width: 280px;
-            border: 0 !important;
-            .brands {
-                .title-header {
-                    margin-bottom: 15px;
-                    position: relative;
-                    padding-bottom: 1.25rem;
-                    h4 {
-                        &::before {
-                            content: "";
-                            left: 0;
-                            position: absolute;
-                            width: 100%;
-                            height: 0.0625rem;
-                            bottom: 0.34375rem;
-                            background-color: $grey6;
-                        }
-                        &::after {
-                            content: "";
-                            left: 0;
-                            position: absolute;
-                            width: 2.5rem;
-                            height: 0.125rem;
-                            background-color: $theme-main;
-                            bottom: 0.3125rem;
-                        }
-                    }
+                .mat-expansion-panel-header-title span {
+                    font-size: 1.2rem;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                    line-height: 1.2rem;
                 }
+            }
 
-                .brand-logos {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-row-gap: 1em;
-                    grid-column-gap: 1em;
-                    .brand-item {
+            .tags-widget {
+                ul {
+                    li {
                         display: inline-block;
-                        text-align: center;
-                        vertical-align: top;
-                        overflow: hidden;
-                        position: relative;
-                        margin-right: 10px;
+                        padding: 0 5px;
+                        margin-bottom: 5px;
+
                         a {
-                            img {
-                                width: 100%;
-                            }
-                        }
-                    }
-                }
-            }
-            .single-sidebar-widget {
-                .post-widget {
-                    .title {
-                        margin-bottom: 15px;
-                        position: relative;
-                        padding-bottom: 1.25rem;
-                        h4 {
-                            font-size: 17px;
-                            font-weight: 600;
-
+                            padding: 6px 0;
+                            display: block;
+                            font-size: 12px;
+                            border: 1px solid $grey6;
+                            border-radius: 16px;
+                            padding-left: 25px;
+                            padding-right: 25px;
                             text-transform: uppercase;
-                            margin-top: 10px;
-                            &::before {
-                                content: "";
-                                left: 0;
-                                position: absolute;
-                                width: 100%;
-                                height: 0.0625rem;
-                                bottom: 0.34375rem;
-                                background-color: $banners-background;
-                            }
-                            &::after {
-                                content: "";
-                                left: 0;
-                                position: absolute;
-                                width: 2.5rem;
-                                height: 0.125rem;
-                                background-color: $theme-main;
-                                bottom: 0.3125rem;
-                            }
-                        }
-                    }
-                    ul {
-                        li {
-                            margin-top: 20px;
-                            .icon-box {
-                                width: 110px;
-                                img {
-                                    width: 100%;
-                                    height: auto;
-                                }
-                            }
-                            .text-box {
-                                padding-left: 15px;
-                                h5 {
-                                    font-weight: 500;
-                                    a {
-                                        color: $font-color;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    p {
-                        font-size: 14.5px;
-                        line-height: 25px;
-                        margin-bottom: 0;
-                    }
-                }
-                .tags-widget {
-                    ul {
-                        li {
-                            display: inline-block;
-                            padding-left: 5px;
-                            padding-right: 5px;
-                            a {
-                                padding: 6px 0;
-                                display: block;
-                                font-size: 12px;
-                                border: 1px solid $grey6;
-                                border-radius: 16px;
-                                padding-left: 25px;
-                                padding-right: 25px;
-                                text-transform: uppercase;
-                                color: $grey7;
-                                font-weight: 600;
-                                -webkit-transition: all 0.4s ease;
-                                transition: all 0.4s ease;
-                                &:hover {
-                                    background: $theme-main;
-                                    border-color: $theme-main;
-                                    color: $white;
-                                }
+                            color: $grey7;
+                            font-weight: 600;
+                            -webkit-transition: all 0.4s ease;
+                            transition: all 0.4s ease;
+                            &:hover {
+                                background: $theme-main;
+                                border-color: $theme-main;
+                                color: $secondary10;
                             }
                         }
                     }
                 }
             }
-            .popular-products {
-                margin-top: 20px;
-            }
-        }
-        .filter-row {
-            padding: 8px 25px;
-            background: $gray-lighter;
-            margin-bottom: 20px;
-            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1),
-                0 1px 1px 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
-        }
 
-        .no-shadow {
-            box-shadow: none !important;
+            .price-box {
+                width: 50%;
+                margin: 0 3px;
+
+                label {
+                    margin-bottom: 3px;
+                    font-size: 1rem;
+                    color: $secondary10;
+                }
+
+                input {
+                    border: none;
+                    border-radius: 3px;
+                    color: $secondary10;
+                    font-size: 1rem;
+                    line-height: 1.2rem;
+                    outline: none;
+                    background-color: gainsboro;
+                    padding: 5px;
+                }
+            }
         }
     }
 }
+
 .mat-toolbar-multiple-rows {
     display: flex;
     box-sizing: border-box;
@@ -1002,11 +922,26 @@ span {
             .product-img {
                 background: $banners-background;
                 img {
-                    max-width: 170px !important;
+                    width: 170px;
+                    height: 170px;
+
                     margin: 12px;
                     display: block;
                     margin-left: auto;
                     margin-right: auto;
+                }
+
+                .no-image {
+                    width: 100%;
+                    svg {
+                        margin: 12px;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 170px;
+                        height: 170px;
+                        fill: $neutral-variant70;
+                    }
                 }
             }
             .product-info-wrapper {
@@ -1137,14 +1072,14 @@ span {
 *  Home banners section styles
 ****************************************/
 .banners-container {
-    .baners {
+    .banners {
         background: $banners-background !important;
         margin-right: 15px;
     }
     .bn-wrap {
         margin-bottom: 18px;
     }
-    .baner {
+    .banner {
         padding: 20px;
         height: 100%;
         transition: 0.15s ease-in;
@@ -1610,57 +1545,25 @@ span {
         }
     }
 }
-/***************************************
-*  Home-2 product section styles
-****************************************/
-.home-2-wrap {
-    .products-section {
-        background: $grey6;
-        .products {
-            padding: 0 !important;
-
-            .product-wrapper {
-                .product-box {
-                    .product-item {
-                        width: 240px;
-                        .product-img {
-                            background: $white;
-                        }
-                    }
-                }
-            }
-            .mat-tab-labels {
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
-            }
-        }
-        h3 {
-            margin-bottom: 0;
-            display: inline-block;
-            font-size: 23px;
-            font-weight: 580;
-            position: absolute;
-        }
-    }
-}
 
 /***************************************
-    ***************************************
-    ***************************************
 *  HOME - 3 STYLES
-****************************************
-****************************************
 ****************************************/
+
 /***************************************
 *  Carousel-3 styles
 ****************************************/
 
 .carousel-3 {
+    padding: 25px 0;
+
+    @media (max-width: 820px) {
+        padding: 0;
+    }
+
     .ctn-box {
         box-sizing: content-box !important;
     }
-    padding: 25px 0;
     .carousel-2-wrapper {
         //  max-width: 100% !important;
         .main-slider {
@@ -2332,112 +2235,131 @@ span {
                     .product-img {
                         background: $gray-lighter;
                         img {
-                            max-width: 180px;
+                            width: 170px;
+                            height: 170px;
                             margin: 12px;
                             display: block;
                             margin-left: auto;
                             margin-right: auto;
                         }
+
+                        .no-image {
+                            width: 100%;
+                            svg {
+                                margin: 12px;
+                                display: block;
+                                margin-left: auto;
+                                margin-right: auto;
+                                width: 170px;
+                                height: 170px;
+                                fill: $neutral-variant70;
+                            }
+                        }
                     }
-                    .product-info-wrapper {
-                        padding: 15px;
-                        .icons {
-                            position: absolute;
-                            top: 30px;
-                            right: 10px;
-                            opacity: 0;
-                            transition: all 0.5s ease;
-                            a {
-                                color: $secondary10;
-                                cursor: pointer;
-                                transition: 0.5s ease;
-                                margin-bottom: 5px;
-                                &:hover {
-                                    color: $secondary90;
-                                }
-                            }
-                        }
+                        .product-info-wrapper {
+                            padding: 15px;
 
-                        .stars {
-                            color: $theme-main;
-                            margin: 2px 0 10px 0;
-                            span {
-                                font-size: 1.5rem;
-                                margin-left: 10px 3px;
-
-                                &.star-border {
-                                    color: #d2d2d2;
-                                }
-
-                                &.star-solid {
-                                    color: $color-yellow;
-                                }
-
-                                &.star-half {
-                                    color: $color-yellow;
-                                }
-                            }
-                            mat-icon {
-                                font-size: 17px;
-                                line-height: 17px;
-                                height: 17px;
-                                width: 17px;
-                                vertical-align: middle;
-                            }
-                        }
-                        .category {
-                            overflow: hidden;
-                            text-overflow: ellipsis;
-                            display: block;
-                            font-weight: 300;
-                            margin-bottom: 4px;
-                            white-space: nowrap;
-                        }
-                        span {
-                            color: $grey5;
-                            font-size: 14px;
-                        }
-                        .price-wrap {
-                            p {
-                                font-size: 1rem;
+                            .category {
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: block;
+                                font-weight: 300;
+                                margin-bottom: 4px;
+                                white-space: nowrap;
                             }
 
-                            a {
-                                background-color: $secondary90 !important;
-                                cursor: pointer;
-                                transition: 0.3s;
-                                width: 38px;
-                                height: 38px;
-                                border-radius: 50%;
-                                text-align: center;
-                                line-height: 46px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                &:hover {
-                                    background-color: $primary10 !important;
+                            .title-wrap {
+                                h4 {
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                    font-weight: 500;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            .stars {
+                                color: $theme-main;
+                                margin: 2px 0 10px 0;
+                                span {
+                                    font-size: 1.5rem;
+                                    margin-left: 10px 3px;
+
+                                    &.star-border {
+                                        color: #d2d2d2;
+                                    }
+
+                                    &.star-solid {
+                                        color: $color-yellow;
+                                    }
+
+                                    &.star-half {
+                                        color: $color-yellow;
+                                    }
+                                }
+                                mat-icon {
+                                    font-size: 17px;
+                                    line-height: 17px;
+                                    height: 17px;
+                                    width: 17px;
+                                    vertical-align: middle;
+                                }
+                            }
+
+                            .icons {
+                                position: absolute;
+                                top: 30px;
+                                right: 10px;
+                                opacity: 0;
+                                transition: all 0.5s ease;
+                                a {
+                                    color: $secondary10;
+                                    cursor: pointer;
+                                    transition: 0.5s ease;
+                                    margin-bottom: 5px;
+                                    &:hover {
+                                        color: $secondary90;
+                                    }
+                                }
+                            }
+
+                            .price-wrap {
+                                p {
+                                    font-size: 1rem;
+                                }
+
+                                a {
+                                    background-color: $secondary90 !important;
+                                    cursor: pointer;
+                                    transition: 0.3s;
+                                    width: 38px;
+                                    height: 38px;
+                                    border-radius: 50%;
+                                    text-align: center;
+                                    line-height: 46px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    &:hover {
+                                        background-color: $primary10 !important;
+                                        mat-icon {
+                                            color: $primary90;
+                                            font-size: 22px;
+                                            transition: 0.3s;
+                                        }
+                                    }
                                     mat-icon {
-                                        color: $primary90;
+                                        color: $secondary10;
                                         font-size: 22px;
                                         transition: 0.3s;
                                     }
                                 }
-                                mat-icon {
-                                    color: $secondary10;
-                                    font-size: 22px;
-                                    transition: 0.3s;
-                                }
                             }
-                        }
-                        .title-wrap {
-                            h4 {
-                                white-space: nowrap;
-                                text-overflow: ellipsis;
-                                overflow: hidden;
-                                font-weight: 500;
-                                cursor: pointer;
+
+                            span {
+                                color: $grey5;
+                                font-size: 14px;
                             }
-                        }
                     }
                     &:hover {
                         .icons {
@@ -2796,7 +2718,7 @@ span {
 ****************************************/
 
 /***************************************
-*  Header-5 styles
+*  Header-4 styles
 ****************************************/
 
 .home-header-4 {
@@ -2804,62 +2726,6 @@ span {
     .logo {
         padding: 25px 0;
     }
-    // .search-form {
-    //     width: 80%;
-    //     margin: 0 auto;
-    //     /* margin-top: 6px; */
-    //     padding: 13px 0;
-    //     .form-wrap {
-    //         background-color: transparent;
-    //         white-space: nowrap;
-    //         zoom: 1;
-    //         width: 100%;
-    //         margin: 0;
-    //         position: relative;
-    //         background: $grey4;
-    //         background: rgba(0, 0, 0, 0);
-    //         input {
-    //             border-style: none;
-    //             border-width: 1px;
-    //             border-radius: 27px;
-    //             border: 1px solid $grey2;
-    //             -webkit-transition: box-shadow 0.3s ease-out;
-    //             transition: box-shadow 0.3s ease-out;
-    //             height: 45px;
-    //             width: 100%;
-    //             max-width: 100%;
-    //             padding: 0 0 0 12px;
-    //             float: left;
-    //             outline: none;
-    //             box-shadow: none;
-    //         }
-    //         .btn-search {
-    //             overflow: visible;
-    //             position: absolute;
-    //             border: 0;
-    //             margin: 0;
-    //             cursor: pointer;
-    //             height: 100%;
-    //             min-width: 50px;
-    //             right: -15px;
-    //             top: 0;
-    //             padding: 0 35px;
-    //             color: $white;
-    //             -webkit-transition: all 250ms ease-in-out;
-    //             -moz-transition: all 250ms ease-in-out;
-    //             -ms-transition: all 250ms ease-in-out;
-    //             -o-transition: all 250ms ease-in-out;
-    //             transition: all 250ms ease-in-out;
-    //             text-transform: uppercase;
-    //             background: transparent;
-    //             color: #222222;
-
-    //             -webkit-box-shadow: none;
-    //             box-shadow: none;
-    //             -webkit-appearance: none;
-    //         }
-    //     }
-    // }
     .search-form {
         width: 80%;
         margin: 0 auto;
@@ -3255,9 +3121,23 @@ span {
                 margin-right: 7px;
                 background: $gray-lighter;
                 border-radius: 3px;
+                width: 80px;
+                height: 80px;
                 img {
-                    max-width: 80px;
+                    width: 80px;
                     margin-right: 8px;
+                }
+
+                .no-image {
+                    width: 100%;
+                    svg {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 80px;
+                        height: 80px;
+                        fill: $neutral-variant70;
+                    }
                 }
             }
             .info {
@@ -4210,6 +4090,53 @@ span {
         width: 200px;
     }
 }
+
+/***************************************
+*  Order Confirmation page styles
+****************************************/
+.order-confirmation {
+    text-align: center;
+
+    img {
+        max-width: 450px;
+    }
+
+    .title {
+        font-size: 67px;
+        font-weight: 700;
+        color: $neutral-variant70;
+        margin: 30px 0;
+    }
+
+    table {
+        width: 600px;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid $primary98;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 1rem;
+    }
+
+    .gratitude-message {
+        margin-bottom: 30px;
+        p {
+            font-weight: 600;
+        }
+    }
+    button {
+        background: $primary90;
+        color: $primary10;
+        padding: 5px 33px;
+        width: 200px;
+    }
+}
 /***************************************
 *  FAQ page styles
 ****************************************/
@@ -4626,9 +4553,8 @@ span {
                     width: 100%;
                     span.amount {
                         position: relative;
-                        font-size: 20px;
+                        font-size: 1rem;
                         line-height: 20px;
-                        color: $theme-main-red;
                         font-weight: 400;
                         width: 35%;
                         float: right;
@@ -4643,9 +4569,8 @@ span {
                 li {
                     span.total {
                         position: relative;
-                        font-size: 20px;
+                        font-size: 1rem;
                         line-height: 20px;
-                        color: $theme-main-red;
                         font-weight: 400;
                         width: 35%;
                         float: right;
@@ -4668,9 +4593,8 @@ span {
                     width: 100%;
                     span.count {
                         position: relative;
-                        font-size: 20px;
+                        font-size: 1rem;
                         line-height: 20px;
-                        color: $theme-main-red;
                         font-weight: 400;
                         width: 35%;
                         float: right;
@@ -4680,14 +4604,28 @@ span {
             .paymentFinal {
                 margin-bottom: 20px;
                 line-height: 34px;
+
+                .mat-expansion-panel {
+                    margin-bottom: 10px;
+                    box-shadow: none;
+                    border: 1px solid $grey6;
+                    border-radius: 5px;
+                    input[type="radio" i] {
+                        margin-right: 1rem;
+                        height: 1rem;
+                        width: 1rem;
+                        accent-color: $secondary40;
+                    }
+                    img {
+                        margin-left: 1rem;
+                    }
+                }
+                .mat-expansion-panel.mat-expanded {
+                    background-color: $neutral98;
+                }
             }
         }
     }
-}
-
-.mat-radio-label-content {
-    color: $grey5;
-    font-weight: 400;
 }
 
 /***************************************
@@ -5119,16 +5057,6 @@ span {
 }
 
 /***************************************
-*  Brands page styles
-****************************************/
-
-.brands-items {
-    .mat-radio-button {
-        margin-bottom: 15px;
-    }
-}
-
-/***************************************
 *  Categories page styles
 ****************************************/
 
@@ -5225,7 +5153,14 @@ span {
     width: 100%;
 
     .mat-list-item.active {
-        background-color: mat-color($theme-main, 50);
+        background-color: $secondary90;
+
+        .mat-line {
+            color: $secondary10;
+            font-weight: 500;
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+        }
     }
     &:hover,
     &:focus {
@@ -5357,15 +5292,30 @@ span {
     }
 
     .profile-panels {
+        @media (max-width: 412px) {
+            margin: 0 5px;
+        }
+
         .profile-user-info {
             box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1),
                 0 1px 1px 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
             padding: 2rem;
 
-            img {
+            .profile-user-avatar {
+                background-color: $grey2;
                 border-radius: 100%;
                 width: 90px;
                 height: 90px;
+
+                .no-avatar {
+                    width: 100%;
+                    text-align: center;
+                    svg {
+                        width: 45px;
+                        height: 45px;
+                        fill: $neutral-variant70;
+                    }
+                }
             }
 
             span {
@@ -5437,6 +5387,8 @@ span {
                 font-size: 1.05rem;
                 padding: 3px;
                 grid-template-columns: 20% 20% 20% 40%;
+                overflow-x: auto;
+                white-space: nowrap;
             }
 
             .orders-grid {
@@ -5447,6 +5399,135 @@ span {
                 .tracking {
                     color: dodgerblue;
                 }
+                &:hover {
+                    background-color: $grey2;
+                    cursor: pointer;
+                }
+            }
+
+            .no-orders {
+                height: 150px;
+                padding-bottom: 2rem;
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .profile-order-detail {
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1),
+            0 1px 1px 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
+        padding-bottom: 2rem;
+        font-weight: 500;
+        font-size: 1rem;
+        position: relative;
+
+        .order-header {
+            padding: 2rem;
+
+            .order-title {
+                padding-right: 3.5rem;
+                float: left;
+                border-bottom: 2px solid #e5e5e5;
+                padding-bottom: 4px;
+                margin-bottom: 0;
+            }
+
+            .order-actions {
+                float: right;
+                background-color: $theme-main;
+                padding: 5px;
+                font-size: 0.75rem;
+                position: absolute;
+                right: 1rem;
+                top: 1rem;
+                border-radius: 2px;
+                color: $font-color;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+
+            .order-subtitle {
+                color: $grey;
+                font-size: 14px;
+                line-height: 1.375;
+                clear: both;
+                padding-top: 12px;
+            }
+        }
+
+        table {
+            width: 100%;
+            min-width: 500px;
+            text-align: left;
+        }
+
+        td {
+            color: $grey;
+            font-weight: 400;
+        }
+
+        thead,
+        tfoot {
+            border-top: 1px solid black !important;
+            border-bottom: 1px solid black !important;
+            text-transform: uppercase;
+            font-size: 1rem;
+            tr {
+                th,
+                td {
+                    padding: 0.5rem 2rem;
+                }
+            }
+        }
+
+        tbody {
+            text-transform: uppercase;
+            font-size: 1rem;
+
+            tr {
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                th,
+                td {
+                    padding: 0.5rem 2rem;
+                }
+            }
+        }
+    }
+
+    .order-address {
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1),
+            0 1px 1px 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
+        padding: 2rem;
+        font-weight: 500;
+        font-size: 1rem;
+        position: relative;
+
+        .profile-badge {
+            background-color: $secondary90;
+            padding: 5px;
+            font-size: 0.75rem;
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            border-radius: 2px;
+            color: $secondary10;
+            text-transform: uppercase;
+        }
+
+        .address-field-name {
+            span {
+                font-size: 1.25rem;
+            }
+        }
+
+        .address-field-contact {
+            .title {
+                font-weight: 400;
+                font-size: 1rem;
+                color: $grey5;
             }
         }
     }
@@ -5488,13 +5569,13 @@ span {
                     width: 400px !important;
                     max-width: 400px !important;
                     outline: none !important;
-                    &:hover {
-                        border: $secondary40 solid 0.5px;
-                    }
-                    &:focus {
-                        outline: $secondary40 solid 0.5px;
-                        background-color: white;
-                    }
+                    // &:hover {
+                    //     border: $secondary40 solid 0.5px;
+                    // }
+                    // &:focus {
+                    //     outline: $secondary40 solid 0.5px;
+                    //     background-color: white;
+                    // }
                 }
 
                 .error-message {
@@ -5556,6 +5637,36 @@ span {
 
         &:disabled {
             cursor: not-allowed;
+        }
+    }
+}
+
+.profile-horizontal-panel {
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0),
+        0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
+
+    // background-color: $secondary90;
+    padding: 0.5rem 1rem;
+    height: 56px;
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    margin-bottom: -20px;
+
+    a {
+        border-radius: 3px;
+        color: $secondary10;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 5px;
+        &:hover {
+            background-color: $secondary90;
+        }
+
+        p {
+            margin-left: 5px;
         }
     }
 }
@@ -5676,5 +5787,56 @@ span {
         &.star-half {
             color: $color-yellow;
         }
+    }
+}
+
+/***************************************
+*  Checkout Process Dialog
+****************************************/
+
+.dialog-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: $secondary10;
+}
+
+.dialog-image {
+    margin: 1.5rem 0;
+    max-width: 300px;
+    img {
+        width: 100%;
+    }
+}
+
+.dialog-messages-box {
+    .dialog-messages-box-title {
+        h4 {
+            color: $secondary10;
+        }
+    }
+
+    .message {
+        color: $color-red;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        padding: 1rem 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/***************************************
+*  Sign In Process Dialog
+****************************************/
+
+.sign-up-link {
+    color: $secondary60;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    &:hover {
+        color: $secondary10;
     }
 }
