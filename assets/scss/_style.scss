@@ -405,6 +405,29 @@ li {
     top: 0;
     width: 100%;
 }
+
+.price-box {
+    width: 50%;
+    margin: 0 3px;
+
+    label {
+        margin-bottom: 3px;
+        font-size: 1rem;
+        color: $secondary10;
+    }
+
+    input {
+        border: none;
+        border-radius: 3px;
+        color: $secondary10;
+        font-size: 1rem;
+        line-height: 2rem;
+        outline: none;
+        background-color: gainsboro;
+        padding: 5px;
+    }
+}
+
 /***************************************
     ***************************************
     ***************************************
@@ -559,55 +582,41 @@ span {
                 }
             }
 
-            .tags-widget {
-                ul {
-                    li {
-                        display: inline-block;
-                        padding: 0 5px;
-                        margin-bottom: 5px;
 
-                        a {
-                            padding: 6px 0;
-                            display: block;
-                            font-size: 12px;
-                            border: 1px solid $grey6;
-                            border-radius: 16px;
-                            padding-left: 25px;
-                            padding-right: 25px;
-                            text-transform: uppercase;
-                            color: $grey7;
-                            font-weight: 600;
-                            -webkit-transition: all 0.4s ease;
-                            transition: all 0.4s ease;
-                            &:hover {
-                                background: $theme-main;
-                                border-color: $theme-main;
-                                color: $secondary10;
-                            }
-                        }
-                    }
-                }
-            }
 
-            .price-box {
-                width: 50%;
-                margin: 0 3px;
 
-                label {
-                    margin-bottom: 3px;
-                    font-size: 1rem;
+        }
+    }
+}
+
+.tags-widget {
+    ul {
+        li {
+            display: inline-block;
+            padding: 0 5px;
+            margin-bottom: 5px;
+
+            a {
+                border-radius: 16px;
+                border: 1px solid $grey6;
+                color: $grey7;
+                cursor: pointer;
+                display: block;
+                font-size: 12px;
+                font-weight: 600;
+                padding: 6px 25px;
+                text-transform: uppercase;
+                transition: all 0.4s ease;
+                -webkit-transition: all 0.4s ease;
+                &:hover {
+                    background: $theme-main;
+                    border-color: $theme-main;
                     color: $secondary10;
                 }
-
-                input {
-                    border: none;
-                    border-radius: 3px;
+                &.selected {
+                    background: $theme-main;
+                    border-color: $theme-main;
                     color: $secondary10;
-                    font-size: 1rem;
-                    line-height: 1.2rem;
-                    outline: none;
-                    background-color: gainsboro;
-                    padding: 5px;
                 }
             }
         }
