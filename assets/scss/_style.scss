@@ -61,6 +61,7 @@
     color: $theme-main;
 }
 
+
 html,
 body {
     height: 100%;
@@ -2710,6 +2711,7 @@ span {
                     display: block;
                     overflow: hidden;
                     position: relative;
+                    cursor: pointer;
                     img {
                         max-width: 100%;
                         height: auto;
@@ -2733,6 +2735,7 @@ span {
                         text-align: center;
                     }
                     h4 {
+                        cursor: pointer;
                         font-size: 19px;
                         margin-bottom: 10px;
                     }
@@ -3559,6 +3562,7 @@ span {
                     }
                 }
                 .author-box {
+                    margin-top: 3rem;
                     .post-author {
                         .inner {
                             position: relative;
