@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1666543232920,
+  "timestamp": 1670001786675,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -15,11 +15,11 @@
         "/53.a2193b6384532dea.js",
         "/favicon.ico",
         "/index.html",
-        "/main.aeec71cfd9c7e652.js",
+        "/main.d87c5fbd07a45384.js",
         "/manifest.webmanifest",
         "/polyfills.7f2704c5475f170b.js",
         "/runtime.d181362dcc3f63b2.js",
-        "/styles.862deddf8348f0f9.css"
+        "/styles.6ca0a725fa80be3c.css"
       ],
       "patterns": []
     },
@@ -121,19 +121,19 @@
     "/assets/images/product/tablet_bn.png": "15faf7837fdc2c3cc6c4adc41f072458514586ed",
     "/assets/scss/_responsive.scss": "e5f98e781c4f0b7e5d84fcba79b0ea1eb4e8b586",
     "/assets/scss/_spinner.scss": "aebb4760612c824281194932549d4b8abc633eb0",
-    "/assets/scss/_style.scss": "7422681f49cd95fa44d208f9806ba343f1bcbb07",
+    "/assets/scss/_style.scss": "56f51b5b9bf7e62341edea37675a893e6cfd02ac",
     "/assets/scss/_variables.scss": "27bb8fd078fcf7878d7e87ff5279f0e82a16f7c4",
     "/favicon.ico": "7aaa55fea71d7d4940285ca37d8418c5b9ff1918",
     "/fontawesome-webfont.8a7cb27d142e3e19.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
     "/fontawesome-webfont.cf011583fb81df9f.woff": "28b782240b3e76db824e12c02754a9731a167527",
     "/fontawesome-webfont.da909aa098b0ee2d.svg": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed",
     "/fontawesome-webfont.e9955780856cf8aa.woff2": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c",
-    "/index.html": "a59eae2c3e9cab329a3bfeb125798148e2c0d6a8",
-    "/main.aeec71cfd9c7e652.js": "0729ccafd1eb5104a789fb4838210aed72b4c517",
+    "/index.html": "6293917781b84d0c4facc60953ff8b3755e7fcd2",
+    "/main.d87c5fbd07a45384.js": "a57b27e43e1ce24456c22c417816c80c243890d3",
     "/manifest.webmanifest": "cc6685643fccc8b9495737b2723968d78bcfe775",
     "/polyfills.7f2704c5475f170b.js": "656da253932398cd9306625031d6bb9a821796da",
     "/runtime.d181362dcc3f63b2.js": "7669003d581e245b03a5ef27f01745bed3d30219",
-    "/styles.862deddf8348f0f9.css": "8af3870fff059b71d7925567cac719603be9071d"
+    "/styles.6ca0a725fa80be3c.css": "a07ccc6b0f9d97f12cbb2ef874f7b5c4594049d1"
   },
   "navigationUrls": [
     {
