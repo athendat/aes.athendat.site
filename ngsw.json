@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1670001786675,
+  "timestamp": 1682114859711,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,15 +11,15 @@
         "ignoreVary": true
       },
       "urls": [
-        "/267.491d38a93cf9d50c.js",
-        "/53.a2193b6384532dea.js",
+        "/243.a77538d079e927da.js",
+        "/436.088b4ce253026eb1.js",
         "/favicon.ico",
         "/index.html",
-        "/main.d87c5fbd07a45384.js",
+        "/main.059c536b5421a793.js",
         "/manifest.webmanifest",
-        "/polyfills.7f2704c5475f170b.js",
-        "/runtime.d181362dcc3f63b2.js",
-        "/styles.6ca0a725fa80be3c.css"
+        "/polyfills.b0b48a2cdfd1a154.js",
+        "/runtime.0a8317c0faa13f57.js",
+        "/styles.a3aef25ca3565a14.css"
       ],
       "patterns": []
     },
@@ -57,16 +57,6 @@
         "/assets/images/logo/isotipo_negro.png",
         "/assets/images/logo/logotipo.png",
         "/assets/images/logo/logotipo_negro.png",
-        "/assets/images/payments/pasarela_EZ.png",
-        "/assets/images/payments/pasarela_QP.png",
-        "/assets/images/payments/pasarela_SOL.png",
-        "/assets/images/payments/pasarela_TM.png",
-        "/assets/images/product/camera_bn.png",
-        "/assets/images/product/cameras.png",
-        "/assets/images/product/laptop.png",
-        "/assets/images/product/mobiles.png",
-        "/assets/images/product/tablet.png",
-        "/assets/images/product/tablet_bn.png",
         "/assets/scss/_responsive.scss",
         "/assets/scss/_spinner.scss",
         "/assets/scss/_style.scss",
@@ -74,15 +64,16 @@
         "/fontawesome-webfont.8a7cb27d142e3e19.ttf",
         "/fontawesome-webfont.cf011583fb81df9f.woff",
         "/fontawesome-webfont.da909aa098b0ee2d.svg",
-        "/fontawesome-webfont.e9955780856cf8aa.woff2"
+        "/fontawesome-webfont.e9955780856cf8aa.woff2",
+        "/owl.video.play.e3b436436832b027.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/267.491d38a93cf9d50c.js": "2ffd7f0e1c188a4fe1b33d808272abce8e492868",
-    "/53.a2193b6384532dea.js": "6f176b6f8019713568f21607b5d1ef01e3d8c589",
+    "/243.a77538d079e927da.js": "72442068c5df4bfed95f408f9742826795cfe591",
+    "/436.088b4ce253026eb1.js": "4dbad4235dfc1b6aa50d1b0fc8a129d401c8e1d4",
     "/assets/data/banners.json": "cdefbcdb6b4d75220c83b4bf0e1d5cac4edc3f43",
     "/assets/data/cities.json": "0654729af398537e6d130c4c5f161e15a8e1d895",
     "/assets/data/products2.json": "92428dc434e766d92ef9ecbfa7c53231504a73ea",
@@ -109,31 +100,22 @@
     "/assets/images/logo/isotipo_negro.png": "43253e193ec0eec111e36d7caae69083b87c6a3d",
     "/assets/images/logo/logotipo.png": "caf25334200a4821dce8512a97246c87334fe981",
     "/assets/images/logo/logotipo_negro.png": "38f72b4997767e9497efe5771478c1ad71b9ea8f",
-    "/assets/images/payments/pasarela_EZ.png": "2d69b0e1d6ac2761af45677fb6caad7d7658b74b",
-    "/assets/images/payments/pasarela_QP.png": "62ac504d086859ad16ade4ff6380926e31a6e2fc",
-    "/assets/images/payments/pasarela_SOL.png": "d9a6618f0041c7b0c361da9c3d918efed5809935",
-    "/assets/images/payments/pasarela_TM.png": "7d25b4ef1a9970a8c6825281d7d3cadf70407d20",
-    "/assets/images/product/camera_bn.png": "83e6b08a941c831b3dc224366d64815d9f387b7e",
-    "/assets/images/product/cameras.png": "9cc633a0efc50f8acfa6736d3765f750b35539c7",
-    "/assets/images/product/laptop.png": "666f1c3ba613672f30a384d3501e4d39ef5a38af",
-    "/assets/images/product/mobiles.png": "c540854472da31bd2b12e4c298344c8aa87f9b0b",
-    "/assets/images/product/tablet.png": "118a8bd493cd2613e5685e01bf009afdbf108165",
-    "/assets/images/product/tablet_bn.png": "15faf7837fdc2c3cc6c4adc41f072458514586ed",
     "/assets/scss/_responsive.scss": "e5f98e781c4f0b7e5d84fcba79b0ea1eb4e8b586",
     "/assets/scss/_spinner.scss": "aebb4760612c824281194932549d4b8abc633eb0",
-    "/assets/scss/_style.scss": "56f51b5b9bf7e62341edea37675a893e6cfd02ac",
+    "/assets/scss/_style.scss": "eb72a9a8e91dd87a2c1a056a1a9d8a9968925203",
     "/assets/scss/_variables.scss": "27bb8fd078fcf7878d7e87ff5279f0e82a16f7c4",
     "/favicon.ico": "7aaa55fea71d7d4940285ca37d8418c5b9ff1918",
     "/fontawesome-webfont.8a7cb27d142e3e19.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
     "/fontawesome-webfont.cf011583fb81df9f.woff": "28b782240b3e76db824e12c02754a9731a167527",
     "/fontawesome-webfont.da909aa098b0ee2d.svg": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed",
     "/fontawesome-webfont.e9955780856cf8aa.woff2": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c",
-    "/index.html": "6293917781b84d0c4facc60953ff8b3755e7fcd2",
-    "/main.d87c5fbd07a45384.js": "a57b27e43e1ce24456c22c417816c80c243890d3",
+    "/index.html": "1e98856a8445ccf42c3ed36fa5a3044f69c37cd4",
+    "/main.059c536b5421a793.js": "df4dcde4b1de9eb9cc6e47000158f972acee5645",
     "/manifest.webmanifest": "cc6685643fccc8b9495737b2723968d78bcfe775",
-    "/polyfills.7f2704c5475f170b.js": "656da253932398cd9306625031d6bb9a821796da",
-    "/runtime.d181362dcc3f63b2.js": "7669003d581e245b03a5ef27f01745bed3d30219",
-    "/styles.6ca0a725fa80be3c.css": "a07ccc6b0f9d97f12cbb2ef874f7b5c4594049d1"
+    "/owl.video.play.e3b436436832b027.png": "c0d64356ec2758cb280d183b4829c923e5ff61e5",
+    "/polyfills.b0b48a2cdfd1a154.js": "4681084aa72da781c763e30df63a11f8e07de4d4",
+    "/runtime.0a8317c0faa13f57.js": "1beec756989dfc4a217e4b170641e6613741b799",
+    "/styles.a3aef25ca3565a14.css": "dff3c2700435e0fbc83b0cd09fbb97e4390bf061"
   },
   "navigationUrls": [
     {
