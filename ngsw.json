@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1682862624524,
+  "timestamp": 1682983592021,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,14 +11,14 @@
         "ignoreVary": true
       },
       "urls": [
-        "/243.a77538d079e927da.js",
+        "/243.0d758c4bb98ddf51.js",
         "/436.088b4ce253026eb1.js",
         "/favicon.ico",
         "/index.html",
         "/main.e28eacf576492677.js",
         "/manifest.webmanifest",
         "/polyfills.b0b48a2cdfd1a154.js",
-        "/runtime.0a8317c0faa13f57.js",
+        "/runtime.122fc55eae4921a1.js",
         "/styles.a3aef25ca3565a14.css"
       ],
       "patterns": []
@@ -72,7 +72,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/243.a77538d079e927da.js": "72442068c5df4bfed95f408f9742826795cfe591",
+    "/243.0d758c4bb98ddf51.js": "08a6aae65e7a2c6171f01e30b609864fb7287eed",
     "/436.088b4ce253026eb1.js": "4dbad4235dfc1b6aa50d1b0fc8a129d401c8e1d4",
     "/assets/data/banners.json": "cdefbcdb6b4d75220c83b4bf0e1d5cac4edc3f43",
     "/assets/data/cities.json": "0654729af398537e6d130c4c5f161e15a8e1d895",
@@ -109,12 +109,12 @@
     "/fontawesome-webfont.cf011583fb81df9f.woff": "28b782240b3e76db824e12c02754a9731a167527",
     "/fontawesome-webfont.da909aa098b0ee2d.svg": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed",
     "/fontawesome-webfont.e9955780856cf8aa.woff2": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c",
-    "/index.html": "6c77c063350928c55ac51b00b34a109795fc5d2c",
+    "/index.html": "530268af5919b73e1cf64706db0d5adee33964c8",
     "/main.e28eacf576492677.js": "511f23832550f21085bb0005dfb36c64bced1672",
     "/manifest.webmanifest": "cc6685643fccc8b9495737b2723968d78bcfe775",
     "/owl.video.play.e3b436436832b027.png": "c0d64356ec2758cb280d183b4829c923e5ff61e5",
     "/polyfills.b0b48a2cdfd1a154.js": "4681084aa72da781c763e30df63a11f8e07de4d4",
-    "/runtime.0a8317c0faa13f57.js": "1beec756989dfc4a217e4b170641e6613741b799",
+    "/runtime.122fc55eae4921a1.js": "99220211d873f82075081ae4998476b7f50d19a4",
     "/styles.a3aef25ca3565a14.css": "dff3c2700435e0fbc83b0cd09fbb97e4390bf061"
   },
   "navigationUrls": [
