@@ -5671,8 +5671,8 @@ span {
         }
 
         table {
-            width: 100%;
-            min-width: 500px;
+            // width: 100%;
+            // min-width: 500px;
             text-align: left;
         }
 
@@ -5683,8 +5683,6 @@ span {
 
         thead,
         tfoot {
-            border-top: 1px solid black !important;
-            border-bottom: 1px solid black !important;
             text-transform: uppercase;
             font-size: 1rem;
             tr {
@@ -5700,8 +5698,6 @@ span {
             font-size: 1rem;
 
             tr {
-                border-top: 1px solid black;
-                border-bottom: 1px solid black;
                 th,
                 td {
                     padding: 0.5rem 2rem;
@@ -5761,7 +5757,6 @@ span {
         .profile-account-data-form,
         .profile-pwd-form {
             form {
-                width: 100%;
 
                 label {
                     margin: 1rem 0 0.25rem 0;
@@ -5779,8 +5774,7 @@ span {
                     font-weight: 500;
                     padding: 0.5rem;
                     transition: all 0.3s ease-in-out;
-                    width: 400px !important;
-                    max-width: 400px !important;
+
                     outline: none !important;
                     // &:hover {
                     //     border: $secondary40 solid 0.5px;
